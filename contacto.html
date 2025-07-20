@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Inventario</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <h1 class="h3">INVENTARIO</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="container my-5">
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="mb-3">Formulario de Contacto</h2>
+            <form id="contactForm" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                    <input type="text" id="nombre" class="form-control" required />
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                    <input type="email" id="email" class="form-control" required />
+                    <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                    <textarea id="mensaje" rows="4" class="form-control" required></textarea>
+                    <div class="invalid-feedback">Por favor, ingresa tu mensaje.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div>Contacto: ronnyemp1988@hotmail.com | Tel: +593 998 789952</div>
+        <div>
+            <a href="https://www.facebook.com/share/1B6CCJa8Nf/?mibextid=wwXIfr" class="text-white me-3">Facebook</a>
+            <a href="https://www.instagram.com/ronnyemp19?igsh=OXBneGc4Y3d4dXIx&utm_source=qr" class="text-white">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página Interactiva Bootstrap y JS</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <h1 class="h3">INVENTARIO</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white active">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="container my-5">
+        <!-- Carrusel -->
+        <section id="carouselExample" class="mb-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="assets/imagen1.png" class="d-block w-100" alt="Imagen 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imagen2.png" class="d-block w-100" alt="Imagen 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imagen3.png" class="d-block w-100" alt="Imagen 3" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tabla de Productos -->
+        <section id="productos" class="mb-5">
+            <h2 class="mb-3">Lista de Productos</h2>
+            <table class="table table-striped table-hover rounded shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptops</td>
+                        <td>Equipos de Computacion</td>
+                        <td>$500.00</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Desktop</td>
+                        <td>Equipos de Computacion</td>
+                        <td>$300.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Monitores</td>
+                        <td>Pantallas y Monitores</td>
+                        <td>$102.00</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="mb-3">Formulario de Contacto</h2>
+            <form id="contactForm" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                    <input type="text" id="nombre" class="form-control" required />
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                    <input type="email" id="email" class="form-control" required />
+                    <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                    <textarea id="mensaje" rows="4" class="form-control" required></textarea>
+                    <div class="invalid-feedback">Por favor, ingresa tu mensaje.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Botón de alerta -->
+        <section class="mb-5">
+            <button id="alertButton" class="btn btn-warning">CERRAR</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div>Contacto: ronnyemp1988@hotmail.com | Tel: +593 998 789952</div>
+        <div>
+            <a href="https://www.facebook.com/share/1B6CCJa8Nf/?mibextid=wwXIfr" class="text-white me-3">Facebook</a>
+            <a href="https://www.instagram.com/ronnyemp19?igsh=OXBneGc4Y3d4dXIx&utm_source=qr" class="text-white">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

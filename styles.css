@@ -1,0 +1,19 @@
+/* Personalización de un elemento para darle toque personal */
+/* Vamos a cambiar el color del título principal y agregar una sombra */
+
+h1 {
+    color: #ff6347; /* Tomate */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Personalización de la tabla, por ejemplo bordes redondeados */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Botón de alerta personalizado */
+#alertButton {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
